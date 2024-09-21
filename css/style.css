@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* Обнуление стилей */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 16px !important;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+footer {
+  display: block;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+/* Типографика */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+p {
+  margin-block: 0;
+  --paragraphMarginBottom: 24px;
+}
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+/* Формы */
+input, button, textarea {
+  font-family: inherit;
+}
+input:clear, button:clear, textarea:clear {
+  display: none;
+}
+
+button {
+  all: initial;
+}
+
+/* Списки */
+ul, ol {
+  padding-left: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+/* Дополнительные стили */
+body,
+blockquote,
+figure:where([class]) {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl:where([class]) {
+  margin-block: 0;
+}
+
+dd[class] {
+  margin-left: 0;
+}
+
+fieldset[class] {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+svg * {
+  transition-property: fill, stroke;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  font-size: 16px;
+}
+
+body {
+  padding: 3.1rem 0;
+}
+
+p, a {
+  font-size: clamp(16px, 0.83vw, 18px);
+}
+
+.wrapper {
+  width: min(100% - 1rem, 1918px);
+  height: auto;
+  display: block;
+  margin: 1.6rem auto;
+  padding: 0 1rem;
+  background-color: #d9d9d9;
+  overflow-x: hidden;
+}
+@media (max-width: 1440px) {
+  .wrapper {
+    width: min(100% - 1rem, 1439px);
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    width: min(100% - 1rem, 767px);
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    width: min(100% - 1rem, 499px);
+  }
+}
+@media (max-width: 393px) {
+  .wrapper {
+    width: min(100% - 1rem, 392px);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+// пример миксина под резиновый текст:
+@mixin fluid-text {
+   font-size: clamp( 16px, 0.83vw, 18px);
+}
+// миксин резинового блока: 
+// не забыть, что к нему применено display: block для центрирования
+@mixin responsive-block {
+   width: min(100% - 1rem, 1918px);
+   height: auto;
+   display: block; 
+   margin:1.6rem auto;
+   padding: 0 1rem;
+   background-color: #d9d9d9;
+   @include laptop {
+      width: min(100% - 1rem, 1439px);
+   }
+   @include tablet {
+      width: min(100% - 1rem, 767px);
+   }
+   @include mobile {
+      width: min(100% - 1rem, 499px);
+   }
+@include mobile-s {
+   width: min(100% - 1rem, 392px);
+
+}
+}

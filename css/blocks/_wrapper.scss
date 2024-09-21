@@ -1,0 +1,4 @@
+.wrapper {
+   @include responsive-block;
+   overflow-x: hidden;
+}
