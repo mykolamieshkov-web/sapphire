@@ -1,9 +1,78 @@
-body {
-
-padding:  3.1rem 0;
+body,html {
+width: 100%;
+max-width: 100vw;
+height: auto;
+scroll-behavior: smooth;
+color: var(--white-color);
+background-color: var(--dark-navy);
+font-family: "Lora", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
 
 }
 p, a {
     @include fluid-text;
  
 }
+h3 {
+    @include fluid-title;
+}
+
+h1 {
+    @include fluid-h1;
+}
+.visually-hidden {
+    @include visually-hidden;
+}
+.button {
+    @include button__main;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

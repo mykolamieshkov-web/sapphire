@@ -1,0 +1,51 @@
+.about-block {
+ @include responsive-block;
+    height: 500px;
+    background-color: var(--dark-navy);
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3.2rem;
+    @include mobile {
+        row-gap: calc(5rem / 1.618);
+        padding: 10px;
+        margin: 8px;
+    }
+}
+.about-block__picture {
+    width: 280px;
+   aspect-ratio: 1;
+   margin: 0;
+   @include mobile {
+    width: calc(280px / 1.618);
+            height: calc(280px / 1.618);
+   }
+    img {
+        width: 280px;
+        aspect-ratio: 1;
+        margin-inline: auto;
+        display: block;
+        @include mobile {
+            width: calc(280px / 1.618);
+            height: calc(280px / 1.618);
+
+        }
+    }
+
+}
+.about-block__suptitle {
+    width: 100%;
+    height: 86px;
+    
+    p {
+        text-align: center;
+        text-wrap: pretty;
+        padding-bottom: 2.2rem;
+        margin-bottom: 2.2rem;
+        
+        
+    }
+
+}
+

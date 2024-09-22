@@ -1,27 +1,66 @@
 // пример миксина под резиновый текст:
 @mixin fluid-text {
-   font-size: clamp( 16px, 0.83vw, 18px);
-}
-// миксин резинового блока: 
-// не забыть, что к нему применено display: block для центрирования
-@mixin responsive-block {
-   width: min(100% - 1rem, 1918px);
-   height: auto;
-   display: block; 
-   margin:1.6rem auto;
-   padding: 0 1rem;
-   background-color: #d9d9d9;
-   @include laptop {
-      width: min(100% - 1rem, 1439px);
-   }
-   @include tablet {
-      width: min(100% - 1rem, 767px);
-   }
-   @include mobile {
-      width: min(100% - 1rem, 499px);
-   }
-@include mobile-s {
-   width: min(100% - 1rem, 392px);
+   font-size: clamp(1rem, 1vw, 1.2rem);
+   line-height: 1.2;
+   letter-spacing: 2%;
 
 }
+
+@mixin fluid-title {
+   font-size: clamp(1.3rem, 1.33vw, 1.32rem);
+   line-height: 1.5;
+   letter-spacing: 3.2%;
+   text-align: center;
 }
+@mixin fluid-h1 {
+   font-size: clamp(2rem, 2.5vw, 2.2rem);
+   line-height: 1.8;
+   text-wrap: balance;
+   letter-spacing: 3%;
+
+}
+
+// ограничивающий контейнер:
+
+@mixin responsive-block {
+   padding: 10px 12px;
+   margin: 10px;
+   width: min(100% - 12px, 100vw);
+   height: auto;
+   
+}
+// спрятать текст
+@mixin visually-hidden {
+   position: absolute !important;
+   width: 1px !important;
+   height: 1px !important;
+   margin: -1px !important;
+   border: 0 !important;
+   padding: 0 !important;
+   white-space: nowrap !important;
+   clip-path: inset(100%) !important;
+   clip: rect(0 0 0 0) !important;
+   overflow: hidden !important;
+ }
+ @mixin  button__main{
+width: 410px;
+height: 90px;
+padding: 1rem;
+margin: 10px;
+background-color: var(--accent-pink);
+color: var(--primary-color);
+text-align: center;
+border-radius: 1rem;
+text-align: center;
+border: solid 6px  var(--primary-color);
+transition: background-color 3ms ease-out;
+@include mobile {
+   width: 390px;
+   height: 35px;
+   padding: 10px 8px;
+   margin: 5px;
+}
+@include hover {
+background-color: var(--hover-color);
+}
+ }

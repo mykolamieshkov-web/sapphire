@@ -1,0 +1,28 @@
+.location {
+@include responsive-block;
+display: flex;
+justify-content: center;
+flex-direction: column;
+row-gap:  3.2rem;
+align-items: center;
+
+
+&__title {
+    width: 100vw;
+    height: 86px;
+h3 {
+    text-align: center;
+}
+}
+&__picture {
+    width: 100%;
+    height: auto;
+
+}
+
+&__cta {
+    margin-inline: auto;
+    margin-block: 12px;
+    display: block;
+}
+}

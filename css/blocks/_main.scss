@@ -1,0 +1,7 @@
+main.main {
+    @include responsive-block;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}

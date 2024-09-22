@@ -3,26 +3,114 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Sapphire Erbil</title>
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/img/favicon_io/site.webmanifest">
 </head>
 <body>
-   <script src="./js/script.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
    <div class="wrapper">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi officia voluptatem temporibus provident, possimus non facilis tenetur laboriosam aliquid, dicta voluptatum? Delectus quisquam sed laborum quidem placeat vel quia voluptatibus!
-      Beatae labore repellat autem expedita velit harum corporis temporibus rerum, nisi, cum hic necessitatibus nostrum aperiam ipsam modi dolorum. Voluptatum quae eaque animi. Aliquid voluptatem deserunt nobis, delectus laborum quas.
-      Beatae fugiat doloremque, vitae dolorem libero quia explicabo est officia rerum vero temporibus molestiae facilis similique nihil iste dignissimos iure asperiores ex? Laboriosam eum doloribus exercitationem ullam ratione facilis veniam.
-      Nemo magni enim, tempore voluptatibus quia iste neque minus voluptatem, animi esse obcaecati ipsam, dicta corrupti dolor sequi. A beatae atque molestias velit aperiam unde voluptatibus voluptatem! Provident, earum deserunt?
-      Mollitia libero in eum ducimus est tenetur voluptate magni, laborum iusto reiciendis similique eligendi, harum iure illum adipisci ratione dicta, quod eaque beatae! Cupiditate a soluta veritatis dicta distinctio quos.
-      Laudantium unde dolorem consequatur. Provident ut aperiam animi sit nulla accusantium repudiandae dolorum, corrupti cum vero molestiae. Deleniti reprehenderit ducimus laudantium? Enim, officia maiores natus corrupti dolore sed ea consequuntur!
-      Unde itaque accusantium similique eius aperiam ea ipsum adipisci praesentium, minima, quaerat, omnis animi eaque? Sequi, illum magnam! Magni fugit repudiandae tempora nesciunt dolore quae vitae a dolorem eum molestias?</p>
       <header class="header">
+         <nav class="header__content" role="navigation">
+            <div class="header__logo">
+              <a  href="index.html" role="link"> <h2>Sapphire</h2></a>
+            </div>
+            <ul class="header__links">
+                <li><a href="#about" role="link">About</a></li>
+                <li><a href="#services" role="link">Services</a></li>
+                <li><a href="#cta" role="link">Book an appointment</a></li>
+            </ul>
+         </nav>
       </header>
       <main class="main">
-
+         <section class="hero-section">
+            <div class="hero-section__cover">
+             <div data-aos="slide-left" aos-duration="8800" class="hero-section__title">
+               <h1>Elevate your
+                  Beauty with 
+                 <span class="hero-section__title--pink-color"> Sapphire</span>
+               </h1>
+             </div>
+             <div data-aos="slide-right" aos-duration="8800" class="hero-section__subtitle">
+               <p>      cultivated a team of professionals passionate about
+                  elevating your natural beauty.</p>
+             </div>
+             <div class="hero-section__button">
+               <a class="button hero-section__button--large"  href="#cta" role="button"> <span class="visually-hidden"> Click this button to contact us and book an appointment</span>Book an appintment</a>
+             </div>
+         </div>
+         </section>
+         <section id="about"  class="about-block">
+            <div class="about-block__picture">
+               <img data-aos="zoom-in" aos-duration="6500" src="./img/main/about/about_picture.png" alt="a brand-new looking client" width="280" height="280" loading="lazy">
+            </div>
+            <div class="about-block__suptitle">
+               <p>At Sapphire Beauty Salon, we offer a wide range of top-tier services designed to enhance<br> your natural beauty and give you the pampering experience you deserve.</p>
+            </div>
+            <div class="about-block__cta">
+               <a href="#services" class="button"><span class="visually-hidden" role="button"> click to explore our services</span> Explore services</a>
+            </div>
+         </section>
+         <section id="services" class="services">
+            <div class="services__cards--row">
+            <div data-aos="flip-down" aos-duration="7800" class="services__card">
+               <h3>Manicure and nails care </h3>
+               <img class="services__picture--icon" src="./img/main/services/icons/nails-vector.svg" alt="services card icon" width="90" height="90" loading="lazy">
+               <img class="services__picture--main"  src="./img/main/services/content/manicure-nails.png" alt="services card picture" width="210" height="210" loading="lazy">
+               <p>Get hight-quality 
+                  treatment</p>
+            </div>
+            <div data-aos="flip-down" aos-duration="7800" class="services__card">
+               <h3>Wonderful haircut  and 
+                  hair-styling</h3>
+               <img class="services__picture--icon" src="./img/main/services/icons/hair-beauty.svg" alt="services card icon" width="90" height="90" loading="lazy">
+               <img class="services__picture main" src="./img/main/services/content/hair-style.png" alt="services card picture" width="210" height="210" loading="lazy">
+               <p>Get Special Offers</p>
+            </div>
+            
+            <div data-aos="flip-down" aos-duration="7800" class="services__card">
+               <h3>Professional level of 
+                  make-up</h3>
+               <img class="services__picture--icon" src="./img/main/services/icons/make-up.svg" alt="services card icon" width="90" height="90" loading="lazy">
+               <img class="services__picture--main" src="./img/main/services/content/make-up.png" alt="services card picture" width="210" height="210" loading="lazy">
+               <p>Get hight-quality 
+                  treatment</p>  
+            </div>
+         </div>
+         <div class="services__button">
+            <a href="#cta" class="button" role="button"><span class="visually-hidden"> Click here to contact us and book an appointmant</span> Book an appointment</a>
+         </div>
+         </section>
+         <section class="location">
+            <div class="location__title">
+               <h3>Coming soon at the Boulevard Erbil</h3>
+            </div>
+            <div class="location__picture">
+               <img src="./img/main/location/location--boulevard.png" alt="our place of location" width="100%" height="100%" loading="lazy">
+            </div>
+            <div class="location__map">
+               <iframe data-aos="flip-up" aos-duration="5800" class="location__map--google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12876.277726506645!2d43.9911313!3d36.2135073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4007232c54b54fd3%3A0x5ccca871d225ae7d!2sThe%20Boulevard!5e0!3m2!1sen!2sua!4v1727031157951!5m2!1sen!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location__cta">
+               <a href="#cta" class="button" role="button"><span class="visually-hidden"> Click here to contact us and book an appointmant</span> Book an appointment</a>
+            </div>
+         </section>
       </main>
-      <footer class="footer">
-         
+      <footer id="cta" class="footer">
+         <p>Gulan St, Erbil, Erbil Governorate, 44001, Iraq</p>
+         <div class="footer__links--row">
+            <a href="https://www.instagram.com/tetiana_mieshkova/" class="footer__link" role="button" target="_blank"> <img src="./img/footer/icons/instagram.svg" alt="instagram icon" loading="lazy" width="90" height="90"> <span class="visually-hidden">click here to contact us in instagram</span></a>
+            <a href="#" class="footer__link" role="button" target="_blank"> <img src="./img/footer/icons/snap-chat.svg" alt="snapchat icon" loading="lazy" width="90" height="90"> <span class="visually-hidden">click here to contact us in snapchat</span></a>
+            <a href="https://wa.me/+380973514442" class="footer__link" role="button" target="_blank"> <img src="./img/footer/icons/whats-up.svg" alt="whatsup icon" loading="lazy" width="90" height="90"> <span class="visually-hidden">click here to contact us in whats-up</span></a>
+         </div>
+         <p>Coming Soon</p>
       </footer>
    </div>
 </body>
